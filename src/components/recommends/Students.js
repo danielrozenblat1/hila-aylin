@@ -27,7 +27,8 @@ const Students = (props) => {
 
   return (
     <>
-      <div className={styles.title} id="קורסים">{props.title}</div>
+
+      <div className={styles.title} >{props.title}</div>
       {/* <div className={styles.explain}>
         מקבץ בנות שעברו דרכי
       </div> */}

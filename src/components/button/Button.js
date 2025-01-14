@@ -19,7 +19,7 @@ const PinkScrollButton = ({ text, icon, to }) => {
     };
 
     return (
-      <ScrollLink to={to} smooth={true} duration={1500} className={styles.button}>
+      <ScrollLink to={to} smooth={true} duration={1500} offset={-100} className={styles.button}>
         <div className={styles.rightIcon}>
           <Player 
             icon={icon} 

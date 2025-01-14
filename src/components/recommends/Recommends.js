@@ -30,7 +30,7 @@ const Recommendations = (props) => {
 
   return (
     <>
-      <div className={styles.title} id="קורסים">{props.title}</div>
+      <div className={styles.title} id="קורס">{props.title}</div>
       {/* <div className={styles.explain}>
         מקבץ בנות שעברו דרכי
       </div> */}
