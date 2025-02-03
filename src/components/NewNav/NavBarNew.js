@@ -61,7 +61,7 @@ const NavBarNew = () => {
     }
   };
 
-  const menuItems = ['קורס לק גל' ,'קורס אקריל','השתלמויות', 'שאלות תשובות', 'מי אני'];
+  const menuItems = ['קורס גבות למתחילות','השתלמות אישית למתקדמות' ,'הטיפולים שלנו', 'מי אני' ,'שאלות תשובות'];
 
   return (
     <nav className={`${styles.navbar} ${styles.sticky}`}>

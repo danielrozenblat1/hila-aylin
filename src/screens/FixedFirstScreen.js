@@ -48,9 +48,9 @@ const FixedFirstScreen = () => {
         <h1 className={styles.title}>HILA AYLIN ACADEMY</h1>
   
         <div className={styles.buttonContainer}>
-        <PinkScrollButton text="אני רוצה ללמוד את התחום" icon={learn} to="קורס"/>
-        <PinkScrollButton text="אני רוצה לקבוע טיפול" icon={lips} to="טיפולים"/>
-  
+        <PinkScrollButton text="קורס גבות מקיף למתחילות" icon={learn} to="קורס"/>
+        <PinkScrollButton text="השתלמות אישית למקצועיות" icon={lips} to="טיפולים"/>
+        <PinkScrollButton text="טיפולי גבות בשיטות מתקדמות" icon={lips} to="טיפולים"/>
         </div>
       </div>
     </div>

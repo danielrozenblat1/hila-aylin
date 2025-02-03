@@ -27,7 +27,7 @@
 .scrollTrack {
   display: flex;
   width: fit-content;
-  animation: scroll 90s linear infinite;
+  animation: scroll 120s linear infinite;
   gap: 20px;
 }
 

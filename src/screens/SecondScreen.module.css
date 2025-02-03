@@ -5,6 +5,13 @@
     margin: 2% auto;
     text-align: center;
     direction: rtl;
+    /* Bronze cream gradient */
+    background: linear-gradient(45deg, #dfd3c3, #f5e6d3, #d2b48c);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Subtle text shadow for depth */
+    text-shadow: 1px 1px 1px rgba(139, 69, 19, 0.1);
 }
 
 .description {
@@ -13,6 +20,13 @@
     direction: rtl;
     text-align: center;
     margin: 2% auto;
+    /* Bronze cream gradient matching the title */
+    background: linear-gradient(45deg, #c0b09b, #f5e6d3, #a28f75);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Subtle text shadow for depth */
+    text-shadow: 1px 1px 1px rgba(139, 69, 19, 0.1);
 }
 
 .row {
@@ -25,11 +39,11 @@
 /* 350px - 450px */
 @media screen and (min-width: 350px) and (max-width: 450px) {
     .title {
-        font-size: 1.7rem;
+        font-size: 1.8rem;
         margin: 3% auto;
     }
     .description {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
     .row {
         flex-direction: column;

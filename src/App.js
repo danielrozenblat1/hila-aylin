@@ -11,12 +11,14 @@ import FixedFirstScreen from './screens/FixedFirstScreen';
 import Recommendations from './components/recommends/Recommends';
 import ByMe from './components/ByMe/ByMe';
 import ForthScreen from './screens/ForthScreen';
+import SixthScreen from './screens/SixthScreen';
 
 function App() {
   return <> 
   <NavBarNew/>
     <FixedFirstScreen/>
-    <Recommendations title="זו יכולה להיות את!"/>
+    <SixthScreen/>
+    {/* <Recommendations title="זו יכולה להיות את!"/> */}
     <SecondScreen/>
     <AboutMe/>
     <AcademySyllabus/>

@@ -2,11 +2,11 @@
   font-family: 'AssistantR';
   font-size: 1.15rem;
   width: 300px;
-  color: rgba(74, 63, 56, 0.9);
+  color: rgba(71, 60, 54, 0.9);
   background: linear-gradient(135deg, 
-    #f3e5c3 0%,
-    #fff9e6 50%,
-    #e8d5b5 100%
+    #d4c0b0 0%,
+    #e8dcd2 50%,
+    #c0a999 100%
   );
   padding: 15px 30px;
   border: none;
@@ -18,9 +18,9 @@
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   box-shadow: 
-    0 4px 12px rgba(205, 175, 125, 0.3),
+    0 4px 12px rgba(165, 142, 122, 0.3),
     inset 0 2px 3px rgba(255, 255, 255, 0.9),
-    inset 0 -2px 5px rgba(193, 154, 107, 0.2),
+    inset 0 -2px 5px rgba(139, 116, 96, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.1);
   text-transform: uppercase;
   position: relative;
@@ -44,7 +44,7 @@
     120deg,
     transparent 0%,
     rgba(255, 255, 255, 0.5) 20%,
-    rgba(255, 242, 204, 0.4) 50%,
+    rgba(226, 210, 198, 0.4) 50%,
     rgba(255, 255, 255, 0.5) 80%,
     transparent 100%
   );
@@ -53,16 +53,16 @@
 
 .button:hover {
   background: linear-gradient(135deg, 
-    #f8ecd3 0%,
-    #fffbf0 50%,
-    #f0e2c7 100%
+    #e0cfc2 0%,
+    #f2e8e1 50%,
+    #d1bfb2 100%
   );
-  color: rgba(74, 63, 56, 1);
+  color: rgba(71, 60, 54, 1);
   transform: perspective(1000px) translateZ(10px);
   box-shadow: 
-    0 6px 15px rgba(205, 175, 125, 0.4),
+    0 6px 15px rgba(165, 142, 122, 0.4),
     inset 0 2px 5px rgba(255, 255, 255, 0.9),
-    inset 0 -2px 5px rgba(193, 154, 107, 0.3),
+    inset 0 -2px 5px rgba(139, 116, 96, 0.3),
     0 0 0 1px rgba(255, 255, 255, 0.2);
 }
 
@@ -74,14 +74,14 @@
 .button:active {
   transform: perspective(1000px) translateZ(2px);
   background: linear-gradient(135deg, 
-    #eee0c0 0%,
-    #f8f4e5 50%,
-    #e5d5b5 100%
+    #c9b5a5 0%,
+    #e5d6cc 50%,
+    #b9a394 100%
   );
   box-shadow: 
-    0 2px 8px rgba(205, 175, 125, 0.2),
+    0 2px 8px rgba(165, 142, 122, 0.2),
     inset 0 1px 3px rgba(255, 255, 255, 0.8),
-    inset 0 -1px 3px rgba(193, 154, 107, 0.2),
+    inset 0 -1px 3px rgba(139, 116, 96, 0.2),
     0 0 0 1px rgba(255, 255, 255, 0.1);
 }
 
