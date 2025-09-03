@@ -1,0 +1,135 @@
+.button {
+  font-family: 'AssistantR';
+  font-size: 1.15rem;
+  width: 300px;
+  color: rgba(71, 60, 54, 0.9);
+  background: linear-gradient(135deg, 
+    #d4c0b0 0%,
+    #e8dcd2 50%,
+    #c0a999 100%
+  );
+  padding: 15px 30px;
+  border: none;
+  border-radius: 10px;
+  margin: 15px auto;
+  direction: rtl;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 
+    0 4px 12px rgba(165, 142, 122, 0.3),
+    inset 0 2px 3px rgba(255, 255, 255, 0.9),
+    inset 0 -2px 5px rgba(139, 116, 96, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-decoration: none;
+  transform: perspective(1000px) translateZ(0);
+  transform-style: preserve-3d;
+}
+
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.5) 20%,
+    rgba(226, 210, 198, 0.4) 50%,
+    rgba(255, 255, 255, 0.5) 80%,
+    transparent 100%
+  );
+  transition: all 0.8s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, 
+    #e0cfc2 0%,
+    #f2e8e1 50%,
+    #d1bfb2 100%
+  );
+  color: rgba(71, 60, 54, 1);
+  transform: perspective(1000px) translateZ(10px);
+  box-shadow: 
+    0 6px 15px rgba(165, 142, 122, 0.4),
+    inset 0 2px 5px rgba(255, 255, 255, 0.9),
+    inset 0 -2px 5px rgba(139, 116, 96, 0.3),
+    0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.button:hover::before {
+  left: 100%;
+  transition: all 0.8s ease;
+}
+
+.button:active {
+  transform: perspective(1000px) translateZ(2px);
+  background: linear-gradient(135deg, 
+    #c9b5a5 0%,
+    #e5d6cc 50%,
+    #b9a394 100%
+  );
+  box-shadow: 
+    0 2px 8px rgba(165, 142, 122, 0.2),
+    inset 0 1px 3px rgba(255, 255, 255, 0.8),
+    inset 0 -1px 3px rgba(139, 116, 96, 0.2),
+    0 0 0 1px rgba(255, 255, 255, 0.1);
+}
+
+.text {
+  flex: 1;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.leftIcon,
+.rightIcon {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive styles */
+@media (max-width: 350px) {
+  .button {
+    width: 250px;
+    font-size: 1rem;
+    padding: 10px 15px;
+  }
+
+  .leftIcon,
+  .rightIcon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .text {
+    padding-right: 10px;
+  }
+}
+
+@media (min-width: 351px) and (max-width: 450px) {
+  .button {
+    width: 280px;
+    font-size: 1.1rem;
+    padding: 12px 20px;
+  }
+
+  .leftIcon,
+  .rightIcon {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .text {
+    padding-right: 15px;
+  }
+}

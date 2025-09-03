@@ -1,0 +1,65 @@
+/* Default styles (for screens above 1250px) */
+.title {
+    font-family: 'Assistant', sans-serif;
+    font-size: 2.5rem;
+    margin: 2% auto;
+    text-align: center;
+    direction: rtl;
+}
+
+.description {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.4rem;
+    direction: rtl;
+    text-align: center;
+    margin: 1% auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1% auto;
+}
+
+
+/* 450px - 550px */
+@media screen and (max-width: 550px) {
+    .title {
+        font-size: 1.6rem;
+        margin: 3% auto;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+    .row {
+        margin: 2% auto;
+    }
+}
+
+/* 350px - 450px */
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 2rem;
+        margin: 3% auto;
+    }
+    .description {
+        font-size: 0.75rem;
+    }
+}
+
+/* Below 350px */
+@media screen and (max-width: 350px) {
+    .title {
+        font-size: 1.8rem;
+        margin: 3% auto;
+    }
+    .description {
+        font-size: 0.7rem;
+        margin: 2% auto;
+    }
+    .row {
+        margin: 3% auto;
+    }
+}

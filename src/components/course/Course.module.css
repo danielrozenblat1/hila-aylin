@@ -1,0 +1,700 @@
+/* Base Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    direction: rtl;
+    position: relative;
+    background: linear-gradient(135deg, rgba(215,199,107,0.05) 0%, rgba(255,253,208,0.05) 100%);
+}
+
+.section {
+    margin:3% auto;
+    opacity: 0;
+    animation: fadeIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.sectionTitle {
+    font-family: 'Assistant', sans-serif;
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    color: #333;
+    letter-spacing: 0.5px;
+}
+
+.sectionTitle::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, 
+        transparent,
+        rgba(215,199,107,0.7),
+        transparent
+    );
+}
+
+/* Phases Section */
+.phases {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+    padding: 1.8rem;
+    background: linear-gradient(135deg, 
+        rgba(243, 229, 220, 0.95) 0%, 
+        rgba(240, 224, 212, 0.95) 50%, 
+        rgba(245, 236, 228, 0.95) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(215,199,107,0.2);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.06),
+        inset 0 2px 6px rgba(255, 255, 255, 0.8),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.phases:hover {
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.08),
+        inset 0 2px 8px rgba(255, 255, 255, 0.9),
+        inset 0 -2px 8px rgba(0, 0, 0, 0.06);
+    border-color: rgba(215,199,107,0.3);
+}
+
+.phases span {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    text-align: center;
+    background: linear-gradient(135deg,
+        rgba(215,199,107,0.2) 0%,
+        rgba(255,253,208,0.2) 100%);
+    border: 1px solid rgba(215,199,107,0.2);
+    border-radius: 20px;
+    color: #333;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 2px 4px rgba(0, 0, 0, 0.05),
+        inset 0 1px 3px rgba(255, 255, 255, 0.5),
+        inset 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.phases span:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg,
+        rgba(215,199,107,0.3) 0%,
+        rgba(255,253,208,0.3) 100%);
+    border-color: rgba(215,199,107,0.3);
+    box-shadow: 
+        0 4px 8px rgba(0, 0, 0, 0.06),
+        inset 0 1px 4px rgba(255, 255, 255, 0.6),
+        inset 0 -1px 4px rgba(0, 0, 0, 0.06);
+}
+
+/* Included Items */
+.includedList {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.includedItem {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.8rem;
+    background: linear-gradient(135deg, 
+        rgba(238, 230, 212, 0.95) 0%, 
+        rgba(235, 226, 207, 0.95) 50%, 
+        rgba(241, 235, 218, 0.95) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(215,199,107,0.2);
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.06),
+        inset 0 2px 6px rgba(255, 255, 255, 0.8),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.includedItem:hover {
+    transform: translateY(-3px);
+    box-shadow: 
+        0 10px 25px rgba(0, 0, 0, 0.08),
+        inset 0 2px 8px rgba(255, 255, 255, 0.9),
+        inset 0 -2px 8px rgba(0, 0, 0, 0.06);
+    border-color: rgba(215,199,107,0.3);
+}
+
+.hexIcon {
+    min-width: 45px;
+    height: 52px;
+    background: linear-gradient(135deg,
+        rgba(215,199,107,0.2) 0%,
+        rgba(255,253,208,0.2) 100%);
+    border: 1px solid rgba(215,199,107,0.2);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    box-shadow: 
+        inset 0 1px 3px rgba(255, 255, 255, 0.5),
+        inset 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.hexIcon::after {
+    content: '✦';
+    color: rgba(215,199,107,0.8);
+    font-size: 1.2rem;
+    transition: all 0.4s ease;
+}
+
+.includedItem:hover .hexIcon {
+    background: linear-gradient(135deg,
+        rgba(215,199,107,0.3) 0%,
+        rgba(255,253,208,0.3) 100%);
+    border-color: rgba(215,199,107,0.3);
+}
+
+.includedText {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Meetings Section */
+.meetings {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 1rem;
+}
+
+.meetingItem {
+    position: relative;
+    padding: 2.5rem 2rem;
+    background: linear-gradient(145deg, 
+        rgba(235, 226, 207, 0.95) 0%, 
+        rgba(238, 230, 212, 0.95) 50%, 
+        rgba(241, 235, 218, 0.95) 100%);
+    border-radius: 16px;
+    border: 1px solid rgba(215,199,107,0.2);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.1),
+        inset 0 0 15px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.meetingItem::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg,
+        rgba(245, 240, 228, 0.4) 0%,
+        rgba(240, 231, 212, 0.1) 100%
+    );
+    z-index: 1;
+    opacity: 0.7;
+    transition: opacity 0.4s ease;
+}
+
+.meetingItem::after {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.85;
+    filter: blur(0px);
+    transition: all 0.4s ease;
+    z-index: 0;
+}
+
+.meetingItem:hover::after {
+    transform: scale(1.05);
+}
+
+.meetingText {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1.1rem;
+    color: #222;
+    line-height: 1.6;
+    position: relative;
+    z-index: 2;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+/* Meeting Images */
+.meetingItem.image1::after {
+    background-image: url('../../images/הילה\ איילין\ תדמית\ 1.png');
+}
+
+.meetingItem.image2::after {
+    background-image: url('../../images/הילה\ איילין\ תדמית\ 7.png');
+}
+
+.meetingItem.image3::after {
+    background-image: url('../../images/הילה\ איילין\ הדגמה.png');
+}
+
+.meetingItem.image4::after {
+    background-image: url('../../images/הילה\ איילין\ תוצאה\ 2.jpeg');
+}
+
+.meetingItem.image5::after {
+    background-image: url('../../images/הילה\ איילין\ תיק\ עבודות.png');
+}
+
+.meetingItem:hover::before {
+    opacity: 0.9;
+}
+
+/* Advantages Section */
+.advantagesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.advantageCard {
+    background: linear-gradient(145deg, 
+        rgba(240, 231, 212, 0.95) 0%, 
+        rgba(235, 226, 207, 0.95) 50%, 
+        rgba(243, 236, 220, 0.95) 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    position: relative;
+    transition: all 0.5s cubic-bezier(0.21, 0.67, 0.58, 1);
+    box-shadow: 
+        /* שכבת צל עמוקה */
+        0 5px 15px -5px rgba(179, 165, 128, 0.3),
+        /* צל אמצעי לעומק */
+        0 4px 8px -6px rgba(219, 205, 162, 0.25),
+        /* צל צדדי */
+        2px 2px 8px -8px rgba(219, 205, 162, 0.2),
+        /* הארה עליונה */
+        inset 0 2px 8px rgba(208, 194, 174, 0.4),
+        /* הארה צדדית */
+        inset -2px 0 6px rgba(188, 179, 159, 0.3),
+        /* צל פנימי תחתון */
+        inset 0 -3px 5px rgba(188, 179, 159, 0.3),
+        /* נצנוץ עדין */
+        0 0 5px rgba(188, 179, 159, 0.6);
+}
+
+.advantageCard:hover {
+    transform: translateY(-3px);
+}
+
+.checkmark {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg,
+        rgba(215,199,107,0.2) 0%,
+        rgba(255,253,208,0.2) 100%);
+    border: 1px solid rgba(215,199,107,0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(215,199,107,0.8);
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+    transition: all 0.4s ease;
+    box-shadow: 
+        inset 0 1px 3px rgba(255, 255, 255, 0.5),
+        inset 0 -1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.advantageCard:hover .checkmark {
+    background: linear-gradient(135deg,
+        rgba(215,199,107,0.3) 0%,
+        rgba(255,253,208,0.3) 100%);
+    border-color: rgba(215,199,107,0.3);
+}
+
+.advantageTitle {
+    font-family: 'Assistant', sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.advantageDescription {
+    font-family: 'AssistantR', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+/* מתחת ל-350px */
+@media (max-width: 349px) {
+
+    .sectionTitle {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+    }
+    .phases span {
+        padding: 0.5rem 1rem;
+        font-size: 0.85rem;
+    }
+    .includedItem {
+        padding: 1rem;
+        gap: 0.8rem;
+    }
+    .hexIcon {
+        min-width: 30px;
+        height: 35px;
+    }
+    .container{
+        width:85%;
+    }
+    .includedText {
+        font-size: 0.9rem;
+    }
+    .meetingItem {
+        padding: 1.5rem 1rem;
+    }
+    .meetingText {
+        font-size: 0.9rem;
+        width:50%;
+    }
+    .meetingItem::after {
+        content: '';
+        position: absolute;
+        top: -30%;
+        left: -5%;
+        width:120px;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.85;
+        filter: blur(0px);
+        transition: all 0.4s ease;
+        z-index: 0;
+    }
+    .includedList, 
+    .meetings {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    .phases {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .advantageCard {
+        padding: 1rem;
+    }
+    .advantageTitle {
+        font-size: 1.1rem;
+    }
+    .advantageDescription {
+        font-size: 0.9rem;
+    }
+    .checkmark {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+   
+}
+
+/* 350px - 450px */
+@media (min-width: 350px) and (max-width: 450px) {
+
+    .sectionTitle {
+        font-size: 1.8rem;
+        margin-bottom: 2.5rem;
+    }
+   
+    .phases {
+        flex-direction: column;
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+    .phases span {
+        padding: 0.6rem 1.1rem;
+        font-size: 0.9rem;
+
+    }
+    .container{
+        width:95%;
+        margin:0 auto
+    }
+    .includedList, 
+    .meetings {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+    .includedItem {
+        padding: 1.2rem;
+        gap: 1rem;
+    }
+    .hexIcon {
+        min-width: 35px;
+        height: 40px;
+    }
+    .includedText {
+        font-size: 0.95rem;
+    }
+    .meetingItem {
+        padding: 1.8rem 1.2rem;
+    }
+    .meetingText {
+        font-size: 1rem;
+        width: 60%;;
+    }
+    .advantageCard {
+        padding: 1.2rem;
+    }
+    .advantageTitle {
+        font-size: 1.15rem;
+    }
+    .advantageDescription {
+        font-size: 0.95rem;
+    }
+    .meetingItem::after {
+        content: '';
+        position: absolute;
+        top: -30%;
+        left: -5%;
+        width:120px;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.85;
+        filter: blur(0px);
+        transition: all 0.4s ease;
+        z-index: 0;
+    }
+}
+
+/* 450px - 550px */
+@media (min-width: 451px) and (max-width: 550px) {
+
+    .sectionTitle {
+        font-size: 1.9rem;
+        margin-bottom: 2.8rem;
+    }
+    .phases {
+        flex-direction: column;
+        padding: 1.4rem;
+        gap: 1.2rem;
+    }
+    .includedList, 
+    .meetings {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .includedItem {
+        padding: 1.4rem;
+        gap: 1.2rem;
+    }
+    .hexIcon {
+        min-width: 38px;
+        height: 44px;
+    }
+    .meetingItem {
+        padding: 2rem 1.5rem;
+    }
+    .meetingItem::after {
+        content: '';
+        position: absolute;
+        top: -30%;
+        left: -5%;
+        width:140px;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.85;
+        filter: blur(0px);
+        transition: all 0.4s ease;
+        z-index: 0;
+    }
+    .advantageCard {
+        padding: 1.4rem;
+    }
+}
+
+/* 550px - 650px */
+@media (min-width: 551px) and (max-width: 650px) {
+
+    .sectionTitle {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+    .phases {
+        padding: 1.6rem;
+        gap: 1.3rem;
+    }
+    .includedList {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .meetings {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .includedItem {
+        padding: 1.6rem;
+    }
+    .meetingItem {
+        padding: 2.2rem 1.8rem;
+    }
+    .meetingItem::after {
+        content: '';
+        position: absolute;
+        top: -30%;
+        left: -5%;
+        width:140px;
+        height: 200px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.85;
+        filter: blur(0px);
+        transition: all 0.4s ease;
+        z-index: 0;
+    }
+    .advantageCard {
+        padding: 1.6rem;
+    }
+}
+
+/* 650px - 750px */
+@media (min-width: 651px) and (max-width: 750px) {
+
+    .sectionTitle {
+        font-size: 2.1rem;
+    }
+    .phases {
+        padding: 1.7rem;
+    }
+    .includedList {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+    .meetings {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .meetingItem::after {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* 750px - 850px */
+@media (min-width: 751px) and (max-width: 850px) {
+
+    .sectionTitle {
+        font-size: 2.15rem;
+    }
+    .includedList {
+        gap: 1.8rem;
+    }
+    .meetings {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    .meetingItem::after {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* 850px - 950px */
+@media (min-width: 851px) and (max-width: 950px) {
+
+    .includedList {
+        gap: 2rem;
+        max-width: 850px;
+    }
+    .meetings {
+        gap: 2.2rem;
+    }
+    .meetingItem::after {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* 950px - 1050px */
+@media (min-width: 951px) and (max-width: 1050px) {
+
+    .includedList {
+        max-width: 900px;
+    }
+    .meetings {
+        gap: 2.3rem;
+    }
+    .meetingItem::after {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* 1050px - 1150px */
+@media (min-width: 1051px) and (max-width: 1150px) {
+
+    .includedList {
+        max-width: 950px;
+    }
+    .meetings {
+        gap: 2.4rem;
+    }
+    .meetingItem::after {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* 1150px - 1250px */
+@media (min-width: 1151px) and (max-width: 1250px) {
+
+    .includedList {
+        max-width: 1000px;
+    }
+    .meetings {
+        gap: 2.5rem;
+    }
+    .meetingItem::after {
+        width: 200px;
+        height: 200px;
+    }
+}
