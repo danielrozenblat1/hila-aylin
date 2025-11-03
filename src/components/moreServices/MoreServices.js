@@ -111,7 +111,7 @@ const TreatmentCard = ({ content, imageUrl, type }) => {
 
 const treatmentContent = {
   powderBrows: {
-    title: "גבות בטכניקת ה powder brows",
+    title: "גבות בטכניקת הפודרה",
     subtitle: "טכניקת הספריי פודרה החדשנית והטבעית ביותר!",
     details: [
       {
@@ -133,7 +133,7 @@ const treatmentContent = {
     ]
   },
   wBrows: {
-    title: "גבות בטכניקת ה w brows",
+    title: "גבות בשיטת השערה / מיקרובליידינג",
     subtitle: "הדור הבא של שיטת השערה החדשנית והמתקדמת ביותר!",
     details: [
       {
